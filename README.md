@@ -34,3 +34,12 @@ Named TSV files (matches_{t}_named.tsv) written to fixed_names/.
 - Produces a node-by-node summary table for each threshold.
 ### Output
 One summary file per threshold ({t}summary.txt).
+
+## decluster.py (edited custom code from Tokuriki Lab)
+### Purpose 
+- Expands a list of seed protein IDs using a CD-HIT clustering file. 
+- Identifies clusters that contain at least one seed ID.
+- Collects all sequence IDs from those clusters.
+- Outputs a de-clustered list of unique protein IDs.
+### Output 
+Text file containing all seed IDs and all cluster members associated with them.
